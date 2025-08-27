@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Optimized for production builds
-  swcMinify: true,
+  // Production optimizations
   compress: true,
   poweredByHeader: false,
 };
