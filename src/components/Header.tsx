@@ -13,26 +13,26 @@ export default function Header() {
           <h1 className="text-5xl text-[#478600]" style={{ fontFamily: 'Stadio Now Display, sans-serif', fontWeight: 700 }}>
             keepr.
           </h1>
-          <p className="text-sm text-[#478600] font-[--font-stadio] whitespace-nowrap">
+          <p className="text-base text-[#478600] whitespace-nowrap" style={{ fontFamily: 'Stadio Now Display, sans-serif', fontWeight: 400 }}>
             where fantasy football and budgeting meet. with real-time consequences
           </p>
         </div>
 
         {/* Navigation Links */}
         <nav className="hidden lg:flex items-center space-x-8">
-          <a href="#how-it-works" className="text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#how-it-works" className="text-lg text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             HOW IT WORKS
           </a>
-          <a href="#join-league" className="text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#join-league" className="text-lg text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             JOIN A LEAGUE
           </a>
-          <a href="#new-league" className="text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#new-league" className="text-lg text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             MAKE A NEW LEAGUE
           </a>
-          <a href="#your-leagues" className="text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#your-leagues" className="text-lg text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             YOUR LEAGUES
           </a>
-          <a href="#your-budget" className="text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#your-budget" className="text-lg text-[#478600] font-[--font-stadio] font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             YOUR BUDGET
           </a>
         </nav>
