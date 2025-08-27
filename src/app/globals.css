@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=HandMade:wght@400;700&display=swap');
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Local Stadio Now Fonts with better loading */
 @font-face {
@@ -34,16 +36,6 @@
   font-display: swap;
 }
 
-@theme {
-  --color-keepr-dark-green: #1a4d2e;
-  --color-keepr-lime-green: #84cc16;
-  --color-keepr-light-beige: #f5f5dc;
-  --color-keepr-gold: #fbbf24;
-  
-  --font-stadio: 'Stadio Now Display', 'Arial', 'Helvetica', sans-serif;
-  --font-handmade: 'HandMade', cursive;
-}
-
 @layer base {
   html {
     font-family: 'Stadio Now Display', 'Arial', 'Helvetica', sans-serif;
@@ -73,4 +65,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+}
+
+/* Custom CSS variables for colors */
+:root {
+  --color-keepr-dark-green: #1a4d2e;
+  --color-keepr-lime-green: #84cc16;
+  --color-keepr-light-beige: #f5f5dc;
+  --color-keepr-gold: #fbbf24;
 }
