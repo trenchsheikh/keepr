@@ -3,11 +3,6 @@ import Image from 'next/image'
 export default function MainContent() {
   return (
     <div className="relative z-10 flex justify-center items-center min-h-[90vh] px-6">
-      {/* Green Border Card - positioned behind all content */}
-      <div className="absolute inset-20 z-0">
-        <div className="w-full h-full bg-[#2e5b0b] rounded-3xl"></div>
-      </div>
-
       {/* Trophy Icon - positioned above the playershoot image on the right */}
       <div className="absolute -right-16 top-4 z-0">
         <Image
@@ -64,7 +59,7 @@ export default function MainContent() {
         {/* Three Ticket Cards */}
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8">
           {/* Left Card - JOIN A LEAGUE */}
-          <div className="bg-[--color-keepr-light-beige] border-2 border-[#dbff70] rounded-lg p-6 text-center transform -rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer hover:shadow-lg">
+          <div className="bg-transparent border-2 border-[#dbff70] rounded-lg p-6 text-center transform -rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer hover:shadow-lg">
             <h3 className="text-xl font-bold text-[#dbff70] stadio-font uppercase">
               JOIN A LEAGUE
             </h3>
@@ -83,7 +78,7 @@ export default function MainContent() {
           </div>
 
           {/* Right Card - HERE TO EXPLORE */}
-          <div className="bg-[--color-keepr-light-beige] border-2 border-[#dbff70] rounded-lg p-6 text-center transform rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer hover:shadow-lg">
+          <div className="bg-transparent border-2 border-[#dbff70] rounded-lg p-6 text-center transform rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer hover:shadow-lg">
             <h3 className="text-xl font-bold text-[#dbff70] stadio-font uppercase">
               HERE TO EXPLORE ?
             </h3>
