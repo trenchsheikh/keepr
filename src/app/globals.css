@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=HandMade:wght@400;700&display=swap');
+@import "tailwindcss";
+
+/* Local Stadio Now Fonts */
+@font-face {
+  font-family: 'Stadio Now Display';
+  src: url('/Fonts/Trial/Stadio-Now-Display-Bold-TRIAL.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stadio Now Display';
+  src: url('/Fonts/Trial/Stadio-Now-Display-TRIAL.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stadio Now Display';
+  src: url('/Fonts/Trial/Stadio-Now-Display-Bold-Italic-TRIAL.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Stadio Now Display';
+  src: url('/Fonts/Trial/Stadio-Now-Display-Italic-TRIAL.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@theme {
+  --color-keepr-dark-green: #1a4d2e;
+  --color-keepr-lime-green: #84cc16;
+  --color-keepr-light-beige: #f5f5dc;
+  --color-keepr-gold: #fbbf24;
+  
+  --font-stadio: 'Stadio Now Display', sans-serif;
+  --font-handmade: 'HandMade', cursive;
+}
+
+@layer base {
+  html {
+    font-family: 'Stadio Now Display', sans-serif;
+  }
+}
+
+@layer components {
+  .handmade-font {
+    font-family: 'HandMade', cursive;
+  }
+}
