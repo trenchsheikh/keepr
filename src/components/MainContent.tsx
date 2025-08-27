@@ -19,8 +19,8 @@ export default function MainContent() {
         <Image
           src="/playershoot.png"
           alt="Soccer player in action"
-          width={800}
-          height={800}
+          width={600}
+          height={600}
           className="object-contain"
         />
       </div>
@@ -41,8 +41,8 @@ export default function MainContent() {
         <Image
           src="/playerhuddle.png"
           alt="Soccer players huddled together"
-          width={700}
-          height={700}
+          width={500}
+          height={500}
           className="object-contain"
         />
       </div>

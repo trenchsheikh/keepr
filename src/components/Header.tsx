@@ -20,19 +20,19 @@ export default function Header() {
 
         {/* Navigation Links */}
         <nav className="hidden lg:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
-          <a href="#how-it-works" className="text-lg text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#how-it-works" className="text-sm text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             HOW IT WORKS
           </a>
-          <a href="#join-league" className="text-lg text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#join-league" className="text-sm text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             JOIN A LEAGUE
           </a>
-          <a href="#new-league" className="text-lg text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#new-league" className="text-sm text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             MAKE A NEW LEAGUE
           </a>
-          <a href="#your-leagues" className="text-lg text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#your-leagues" className="text-sm text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             YOUR LEAGUES
           </a>
-          <a href="#your-budget" className="text-lg text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
+          <a href="#your-budget" className="text-sm text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             YOUR BUDGET
           </a>
         </nav>
