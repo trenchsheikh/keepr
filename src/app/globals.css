@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=HandMade:wght@400;700&display=swap');
 @import "tailwindcss";
 
-/* Local Stadio Now Fonts */
+/* Local Stadio Now Fonts with better loading */
 @font-face {
   font-family: 'Stadio Now Display';
   src: url('/Fonts/Trial/Stadio-Now-Display-Bold-TRIAL.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -14,6 +15,7 @@
   src: url('/Fonts/Trial/Stadio-Now-Display-TRIAL.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +23,7 @@
   src: url('/Fonts/Trial/Stadio-Now-Display-Bold-Italic-TRIAL.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
   src: url('/Fonts/Trial/Stadio-Now-Display-Italic-TRIAL.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
+  font-display: swap;
 }
 
 @theme {
@@ -36,18 +40,27 @@
   --color-keepr-light-beige: #f5f5dc;
   --color-keepr-gold: #fbbf24;
   
-  --font-stadio: 'Stadio Now Display', sans-serif;
+  --font-stadio: 'Stadio Now Display', 'Arial', 'Helvetica', sans-serif;
   --font-handmade: 'HandMade', cursive;
 }
 
 @layer base {
   html {
-    font-family: 'Stadio Now Display', sans-serif;
+    font-family: 'Stadio Now Display', 'Arial', 'Helvetica', sans-serif;
+  }
+  
+  /* Ensure consistent font loading */
+  * {
+    font-family: inherit;
   }
 }
 
 @layer components {
   .handmade-font {
     font-family: 'HandMade', cursive;
+  }
+  
+  .stadio-font {
+    font-family: 'Stadio Now Display', 'Arial', 'Helvetica', sans-serif;
   }
 }

@@ -56,7 +56,7 @@ export default function MainContent() {
       <div className="bg-[--color-keepr-dark-green] rounded-3xl p-12 max-w-4xl w-full relative overflow-hidden z-20">
         {/* Headline */}
         <div className="text-center mb-16">
-          <h2 className="text-6xl md:text-7xl font-bold text-[#dbff70] leading-tight" style={{ fontFamily: 'Stadio Now Display, sans-serif', fontWeight: 700 }}>
+          <h2 className="text-6xl md:text-7xl font-bold text-[#dbff70] leading-tight stadio-font" style={{ fontWeight: 700 }}>
             <span className="text-8xl md:text-9xl">*</span> Think you can stick to your budget? Let your mates be the ref.
           </h2>
         </div>
@@ -65,7 +65,7 @@ export default function MainContent() {
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8">
           {/* Left Card - JOIN A LEAGUE */}
           <div className="bg-[--color-keepr-light-beige] border-2 border-[#dbff70] rounded-lg p-6 text-center transform -rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer hover:shadow-lg">
-            <h3 className="text-xl font-bold text-[#dbff70] font-[--font-stadio] uppercase">
+            <h3 className="text-xl font-bold text-[#dbff70] stadio-font uppercase">
               JOIN A LEAGUE
             </h3>
           </div>
@@ -77,14 +77,14 @@ export default function MainContent() {
             
             {/* Highlight circle around middle card */}
             <div className="absolute -inset-2 border-2 border-gray-600 rounded-full opacity-50"></div>
-            <h3 className="text-xl font-bold text-[#dbff70] font-[--font-stadio] uppercase relative z-10">
+            <h3 className="text-xl font-bold text-[#dbff70] stadio-font uppercase relative z-10">
               MAKE A NEW LEAGUE
             </h3>
           </div>
 
           {/* Right Card - HERE TO EXPLORE */}
           <div className="bg-[--color-keepr-light-beige] border-2 border-[#dbff70] rounded-lg p-6 text-center transform rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer hover:shadow-lg">
-            <h3 className="text-xl font-bold text-[#dbff70] font-[--font-stadio] uppercase">
+            <h3 className="text-xl font-bold text-[#dbff70] stadio-font uppercase">
               HERE TO EXPLORE ?
             </h3>
           </div>
