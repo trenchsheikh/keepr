@@ -6,20 +6,20 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="relative z-20 px-6 py-4">
+    <header className="relative z-20 px-6 py-0">
       <div className="flex items-center justify-between">
         {/* Logo and Tagline */}
-        <div className="flex items-center space-x-4">
-          <h1 className="text-5xl text-[#478600] stadio-font" style={{ fontWeight: 700 }}>
+        <div className="flex flex-col items-start space-y-0">
+          <h1 className="text-4xl text-[#478600] stadio-font" style={{ fontWeight: 700 }}>
             keepr.
           </h1>
-          <p className="text-base text-[#478600] whitespace-nowrap stadio-font" style={{ fontWeight: 400 }}>
+          <p className="text-sm text-[#478600] whitespace-nowrap stadio-font" style={{ fontWeight: 400 }}>
             where fantasy football and budgeting meet. with real-time consequences
           </p>
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center space-x-8 absolute left-1/2 transform -translate-x-1/2">
           <a href="#how-it-works" className="text-lg text-[#478600] stadio-font font-bold uppercase hover:text-[--color-keepr-lime-green] transition-colors">
             HOW IT WORKS
           </a>
@@ -36,6 +36,15 @@ export default function Header() {
             YOUR BUDGET
           </a>
         </nav>
+
+        {/* FPL Logo */}
+        <div className="hidden lg:flex items-center ml-8">
+          <img
+            src="/fpl.png"
+            alt="Fantasy Premier League"
+            className="h-32 w-auto object-contain"
+          />
+        </div>
 
         {/* Menu Button */}
         <button
